@@ -96,23 +96,22 @@ export abstract class Router {
     let value: string
     switch (trade.tradeType) {
       case TradeType.EXACT_INPUT:
-       
-          methodName = useFeeOnTransfer
-            ? 'swapExactTokensForTokensSupportingFeeOnTransferTokens'
-            : 'swapExactTokensForTokens'
-          // (uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
-          args = [amountIn, amountOut, path, to, deadline]
-          value = ZERO_HEX
-        
+        methodName = useFeeOnTransfer
+          ? 'swapExactTokensForTokensSupportingFeeOnTransferTokens'
+          : 'swapExactTokensForTokens'
+        // (uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
+        args = [amountIn, amountOut, path, to, deadline]
+        value = ZERO_HEX
+
         break
       case TradeType.EXACT_OUTPUT:
         invariant(!useFeeOnTransfer, 'EXACT_OUT_FOT')
-       
-          methodName = 'swapTokensForExactTokens'
-          // (uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
-          args = [amountOut, amountIn, path, to, deadline]
-          value = ZERO_HEX
-        
+
+        methodName = 'swapTokensForExactTokens'
+        // (uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
+        args = [amountOut, amountIn, path, to, deadline]
+        value = ZERO_HEX
+
         break
     }
     return {

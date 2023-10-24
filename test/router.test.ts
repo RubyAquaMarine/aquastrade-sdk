@@ -1,5 +1,5 @@
 import invariant from 'tiny-invariant'
-import { ChainId,  Pair, Percent, Route, Router, Token, TokenAmount, Trade} from '../src'
+import { ChainId, Pair, Percent, Route, Router, Token, TokenAmount, Trade } from '../src'
 import JSBI from 'jsbi'
 
 function checkDeadline(deadline: string[] | string): void {
@@ -16,7 +16,7 @@ describe('Router', () => {
   const pair_0_1 = new Pair(new TokenAmount(token0, JSBI.BigInt(1000)), new TokenAmount(token1, JSBI.BigInt(1000)))
 
   describe('#swapCallParameters', () => {
-    describe('exact in', () => {     
+    describe('exact in', () => {
       it('token0 to token1', () => {
         const result = Router.swapCallParameters(
           Trade.exactIn(new Route([pair_0_1], token0, token1), new TokenAmount(token0, JSBI.BigInt(100))),
@@ -50,6 +50,5 @@ describe('Router', () => {
         checkDeadline(result.args[result.args.length - 1])
       })
     })
-    
   })
 })

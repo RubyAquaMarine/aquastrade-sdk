@@ -12,13 +12,11 @@ describe('Pair', () => {
     })
   })
 
-  
   describe('#getAddress', () => {
     it('returns the correct address', () => {
       expect(Pair.getAddress(USDC, DAI)).toEqual('0xa3b603796D6B3E085315022cD35F36175e9715D9')
     })
   })
-  
 
   describe('#token0', () => {
     it('always is the token that sorts before', () => {
@@ -67,7 +65,7 @@ describe('Pair', () => {
   describe('#token1Price', () => {
     it('returns price of token1 in terms of token0', () => {
       expect(new Pair(new TokenAmount(USDC, '101'), new TokenAmount(DAI, '100')).token1Price).toEqual(
-        new Price(DAI,USDC,  '100', '101')
+        new Price(DAI, USDC, '100', '101')
       )
       expect(new Pair(new TokenAmount(DAI, '100'), new TokenAmount(USDC, '101')).token1Price).toEqual(
         new Price(DAI, USDC, '100', '101')
