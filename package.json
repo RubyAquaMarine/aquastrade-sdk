@@ -1,17 +1,19 @@
 {
-  "name": "@mumbaiswap/sdk",
+  "name": "@aquastrade/sdk",
   "license": "MIT",
   "version": "1.0.0",
-  "description": "🛠 An SDK for building applications on top of Uniswap.",
+  "description": "🛠 An SDK for building applications on top of UniswapV2.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-sdk.git",
+  "repository": "https://github.com/RubyAquaMarine/aquastrade-sdk.git",
   "keywords": [
     "uniswap",
-    "ethereum"
+    "ethereum",
+    "skale",
+    "gas-is-free"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {

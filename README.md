@@ -58,3 +58,16 @@ Time:        1.853s
 Ran all test suites.
 ✨  Done in 2.60s.
 ```
+
+```sh
+yarn build
+```
+
+# Skale : gas-is-free
+There is no need for native ETH on Skale.network
+*  Native ETH can be deposited into the SKALE BRIDGE
+* SKALE BRIDGE wraps an equivalent and outputs an ERC20 token on the Skale chain : EuropaHub.network
+## removed from sdk
+- swapExactETH
+- swapExactTokensForETH
+
