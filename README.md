@@ -58,14 +58,6 @@ Time:        1.853s
 Ran all test suites.
 ✨  Done in 2.60s.
 ```
-1=6?}yk=tz<^ku
-# NPM 
-
-```sh
-yarn build
-npm login 
-npm publish
-```
 
 # Skale : gas-is-free
 There is no need for native ETH on Skale.network
