@@ -18,13 +18,13 @@ To run the tests, follow these steps. You must have at least node v10 and [yarn]
 First clone the repository:
 
 ```sh
-git clone https://github.com/tangminjie/uniswapV2-sdk.git
+git clone https://github.com/RubyAquaMarine/aquastrade-sdk.git
 ```
 
 Move into the uniswap-sdk working directory
 
 ```sh
-cd uniswapV2-sdk/
+cd aquastrade-sdk/
 ```
 
 Install dependencies
@@ -51,10 +51,10 @@ $ tsdx test
  PASS  test/entities.test.ts
  PASS  test/trade.test.ts
 
-Test Suites: 1 skipped, 6 passed, 6 of 7 total
-Tests:       3 skipped, 82 passed, 85 total
+Test Suites: 1 skipped, 9 passed, 9 of 10 total
+Tests:       3 skipped, 125 passed, 128 total
 Snapshots:   0 total
-Time:        5.091s
+Time:        1.853s
 Ran all test suites.
-✨  Done in 6.61s.
+✨  Done in 2.60s.
 ```

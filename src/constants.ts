@@ -9,7 +9,8 @@ export enum ChainId {
   RINKEBY = 4,
   GÖRLI = 5,
   KOVAN = 42,
-  MUMBAI = 80001
+  MUMBAI = 80001,
+  EUROPA = 2046399126,
 }
 
 export enum TradeType {
@@ -23,9 +24,9 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0xe4f86a43fd5bF8e021c64CC2E8b6BDf0b757881b'
+export const FACTORY_ADDRESS = '0xc318a82CB7c2B0faf7e355BB8F285016956aBF55'
 
-export const INIT_CODE_HASH = '0x2bbf561059bfad76dd3e7f5e7e45d68e76db16d20d00dc76889202628a6417d9'
+export const INIT_CODE_HASH = '0x6ef9e427f9c071a27efafa75b3b56e02dd81c7e0d3f18b9b62d3a2fb194077bd'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
