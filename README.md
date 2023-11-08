@@ -6,7 +6,7 @@
 
 In-depth documentation on this SDK is available at [uniswap.org](https://uniswap.org/docs/v2/SDK/getting-started/).
 
-**this project for to [v2-sdk](https://github.com/Uniswap/uniswap-sdk.git) - 2020-9-14 -commit for a88048e9c4198a5bdaea00883ca00c8c8e582605**
+* Ubiswap V2 : [v2-sdk](https://github.com/Uniswap/v2-sdk) - 2020-9-14 -commit for a88048e9c4198a5bdaea00883ca00c8c8e582605
 
 * Modify the factory contract address, `init_code_pair_hash` address, ETH address, and chain ID in v2-sdk. Compile and publish to NPM mirror. 
 
