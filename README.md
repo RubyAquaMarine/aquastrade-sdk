@@ -1,8 +1,7 @@
 # Aquas.Trade SDK
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![npm version](https://img.shields.io/npm/v/@uniswap/sdk/latest.svg)](https://www.npmjs.com/package/@aquastrade/sdk/v/latest)
-[![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/minzip/@uniswap/sdk/latest.svg)](https://bundlephobia.com/result?p=@uniswap/sdk@latest)
+[![npm version](https://img.shields.io/npm/v/@aquastrade/sdk/latest.svg)](https://www.npmjs.com/package/@aquastrade/sdk/v/latest)
 
 In-depth documentation on this SDK is available at [uniswap.org](https://uniswap.org/docs/v2/SDK/getting-started/).
 
@@ -58,10 +57,13 @@ Ran all test suites.
 ✨  Done in 2.60s.
 ```
 
-# Skale : gas-is-free
+## Skale : gas-is-free
+
 There is no need for native ETH on Skale.network
-*  Native ETH can be deposited into the SKALE BRIDGE
+
+* Native ETH can be deposited into the SKALE BRIDGE
 * SKALE BRIDGE wraps an equivalent and outputs an ERC20 token on the Skale chain : EuropaHub.network
+  
 ## removed from sdk
 - swapExactETH
 - swapExactTokensForETH
